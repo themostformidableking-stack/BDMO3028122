@@ -1,0 +1,164 @@
+
+PyDev console: starting.
+Python 3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)] on win32
+c = [-45,0,12,25,197]
+c
+[-45, 0, 12, 25, 197]
+c = ['строка', 15,-25,92.12345,[3,6,'andrnicon']]
+c
+['строка', 15, -25, 92.12345, [3, 6, 'andrnicon']]
+c[0]
+'строка'
+i=[1,2,3]
+i2=i*2
+i2
+[1, 2, 3, 1, 2, 3]
+len(i)
+3
+len(i2)
+6
+i[-1]
+3
+i[-2]
+2
+i[-1]
+3
+i2[-1]
+3
+c=i
+c
+[1, 2, 3]
+c[2]=77
+c
+[1, 2, 77]
+i
+[1, 2, 77]
+id(c)
+1827998006464
+id(i)
+1827998006464
+str='Строка 1'
+str[0]
+'С'
+str[0]='Л'
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+TypeError: 'str' object does not support item assignment
+id(str)
+1827996641168
+str='Строка 2'
+id(str)
+1827965632880
+str2=str
+str='Строка 1'
+str='Строка 3'
+id(str2)
+1827965632880
+id(str)
+1827998278528
+str2
+'Строка 2'
+i=[]
+for a in range(1,10):
+    i+=[a]
+    
+a
+9
+i
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+sp=[[]]
+sp=[]
+sp +='Содержимое списка'
+sp
+['С', 'о', 'д', 'е', 'р', 'ж', 'и', 'м', 'о', 'е', ' ', 'с', 'п', 'и', 'с', 'к', 'а']
+con=i+sp
+con
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 'С', 'о', 'д', 'е', 'р', 'ж', 'и', 'м', 'о', 'е', ' ', 'с', 'п', 'и', 'с', 'к', 'а']
+tuple1=()
+tuple1='Иванов','Петр', 33
+tuple1
+('Иванов', 'Петр', 33)
+len(tuple1)
+3
+tuple2='Иванов',
+tuple2
+('Иванов',)
+tine_tuple=(9,16,1)
+seconds = tine_tuple=[0]*3600+tine_tuple[1]*60+tine_tuple[2]
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+TypeError: can only concatenate list (not "int") to list
+from time import time
+seconds = time_tuple=[0]*3600+time_tuple[1]*60+time()e_tuple[2]
+  File "<input>", line 3
+    seconds = time_tuple=[0]*3600+time_tuple[1]*60+time()e_tuple[2]
+                                                         ^^^^^^^
+SyntaxError: invalid syntax
+from time import time
+seconds = time_tuple=[0]*3600+time_tuple[1]*60+time()time()_tuple[2]
+  File "<input>", line 3
+    seconds = time_tuple=[0]*3600+time_tuple[1]*60+time()time()_tuple[2]
+                                                         ^^^^
+SyntaxError: invalid syntax
+seconds=time_tuple[0]*3600+tinm_tuple[1]*60+time_tuple[2]
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+NameError: name 'time_tuple' is not defined. Did you mean: 'tine_tuple'?
+time_tuple=(9,16,1)
+seconds=time_tuple[0]*3600+tinm_tuple[1]*60+time_tuple[2]
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+NameError: name 'tinm_tuple' is not defined. Did you mean: 'tine_tuple'?
+seconds = time_tuple[0]*3600+tinm_tuple[1]*60+time_tuple[2]
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+NameError: name 'tinm_tuple' is not defined. Did you mean: 'tine_tuple'?
+time_tuple+=(44,55)
+id(time_tuple)
+1827997839328
+time_tuple+=(66,77)
+id(time_tuple)
+1827997902192
+i2+=time_tuple
+time_tuple+=([23,45,12],[61,42,10])
+time_tuple
+(9, 16, 1, 44, 55, 66, 77, [23, 45, 12], [61, 42, 10])
+len(time_tuple)
+9
+time_tuple[8]=12
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+TypeError: 'tuple' object does not support item assignment
+time_tuple[8][1]=12
+time_tuple
+(9, 16, 1, 44, 55, 66, 77, [23, 45, 12], [61, 12, 10])
+stident_tuple=('Иванов', [98,85,87])
+firstname, grades=stident_tuple
+fersname
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+NameError: name 'fersname' is not defined. Did you mean: 'firstname'?
+ferstname
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+NameError: name 'ferstname' is not defined. Did you mean: 'firstname'?
+firstname
+'Иванов'
+grades
+[98, 85, 87]
+list1=['Элемент списка 1','Эдемент списка 2','Элемент 3']
+list2=list(enumerate(list1))
+tuple3=tuple(enumerate(list1))
+i3=i2[2:6]
+i2[2]=33
+i3
+[3, 1, 2, 3]
+i4=i2[:6]
+i4=i2[0:6]
+i4=i2[6:]
+i4=i2[::2]
+i4=i2[::-1]
+i4.sort()
+i3.clear()
+i4.count(1)
+3
